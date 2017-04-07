@@ -247,13 +247,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-# The preparation is inversely proportional to the time left...
-# Submission: April 23.
-# Presentations: April 24 and 26.
-# Final exam: Anytime during finals week.
-# The slightest qwam...
-# Pitches during lab session...
-# Given them tasks...
-# Steganography
-#
