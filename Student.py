@@ -12,13 +12,13 @@ from random import *
     TOKENS and GeneratedID():
     Tokens will be used to generate IDs for the students.
     Student ID must be 10-digit long. IDs must start with either L, Z, R, or S.
-    GenerateID() is the method responsible for checking and randomizing the tokens.
+    CriarID() is the method responsible for checking and randomizing the tokens.
     The structrue and logic for creating student IDs is as follows:
     (ltoken) + (lengthOfName) + (ttoken) + (2 x mtoken) + (ztoken) + (dtoken)
     i.e.   R 10 74 MP 5 EN
 
-    Who():
-    This class has a Who() method to be used to output all non-default information about any
+    Info():
+    This class has a Info() method to be used to output all non-default information about any
     instance of the Student class. If any property within the object is left "Unspecified" or
     left to its default value, such information will be omitted while outputing to stdout. All information is,
     however, output when the objects are saved.
@@ -37,18 +37,18 @@ from random import *
     CHANGE:
     These set of methods will allow for the specified parameters to be changed.
 
-    ChangeEmailID():
+    MudarEmail():
     EmailId() will check the database of students for username@schooldomain.edu matches.
     If the username is taken, a new email should be assigned to the user.
 
-    Save():
-    Every instance of the Student class can be saved to a file using the Save() method.
+    Salvar():
+    Every instance of the Student class can be saved to a file using the Salvar() method.
     The output of every save is stored in a file called students.lz. Note that the file is open in -a append mode.
 
     Logs:
     This set of methods will save information about specific activities on a dedicated file for future refence.
 
-    ReportHack():
+    ReportarHack():
     Much like the logs, this method outputs detailed information about an attempted change in StudentID or EmailID for a given user.
     The output records the date of the incident, YY-MM-DD, along with information about the user who attempted the change,
     as well as the permission codes and tokens utilized for the hack.
