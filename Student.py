@@ -235,14 +235,10 @@ class Student(object):
 
 
 def main():
-    a = 1
-    with open ("Students.lz", 'r') as newFile:
-        for line in newFile:
-            print(line)
-    #firstname = input("First name: ")
-    #lastname  = input("Last name: ")
-    #person    = Student(firstname, lastname)
-    #person.Who()
+    firstname = input("First name: ")
+    lastname  = input("Last name: ")
+    person    = Student(firstname, lastname)
+    person.Who()
 
 
 if __name__ == "__main__":
